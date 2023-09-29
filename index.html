@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACYElEQVQ4jYXPP2gUQRQG8C+Z29u73Zmd/Te7dyu5SK4R9YSYA9sUgqDNFQEFUcGEMx42CgoaSWMThYCghMApURIChqAgoqBYCIIS7CwCtqKIhU20schnE0+PyPlgmOK97/dmgO3VJ6U8Z4xZT5JkQ2v9Rghx+B9z26tQKJwIw3A1yzJmWcZSqURjDH3f33Qc5/F/Adu2J5Mk4eDgIKvVKtM0ZRzHDIKASqkNAFFPQGt9N8syVioVZlnGJEkYxzF936dSipZlNXsCURStlctllkolJklCYwyjKKLWmlJK2rZ9qycQBMHrNE2ZpimNMTTGMAxDKqUopWQ+n7/REygWizO/g39v932fY2NjFEI0ADgAvK7gvIWbW42B+bm575ONBuMwpO/7rAwMcGF6mneuTm0qIH6SxwoAuwtYKuDeFUfcB5C1d1XfPVpe5tLiIoMgYKvV4uT4aT71ct9OCRx/WMCDbU8/a6H51s9RCdFYU31fXmjBfdKhlJJSStakw1UvR/rgGYFxAFYXcDCHUQbgbRuzn4N+rgeCM75Nz/OolKJSikPK5UYAHgBGLtu4AEB1gBpQYwQyAj9G/VwJLKbSped59DyPoZRsapvXtMUaUGtamLho43w3YEAa8Hls8aQucMLLd4Ah5bIdWNyhJNsO2lNFXHql8bIDHMnhEFOQKfgszlF7Hlv6D7BXOZwObCql+D7uI1Pwa4RPHWDWxXWWQZbBdmRRKcVRr9j5f0W5PKoLdF2XC1GOLIM/U/zoALuBPcNAfRiol4E6gLreun8fR4imbdsfdgocGwbqI8B+APgFDt7ZgEFGdqkAAAAASUVORK5CYII="/>
+		<title>brunolee</title>
+	</head>
+	<style>
+		body {
+			background-image: linear-gradient(135deg, red, blue);
+			width:100vw!important;
+			height:100vh!important;
+			margin:0;
+			font-family: Consolas;
+			font-size: 16px;
+			line-height: 10px;
+			color: white;
+		}
+		.avatar-circle {
+			background-color: white;
+			border-radius: 50%;
+			background-position: top center;
+			background-size: full;
+			width: 200px;
+			height: 200px;
+			margin: 3px;
+			border: 1px solid rgba(0,0,0,0);
+		}
+		.avatar-circle:hover {
+			box-shadow: 0 0 20px yellow;
+			margin: 3px;
+			border: 1px solid yellow;
+			transition: ease-out 0.2s;
+			.L_eye, .R_eye, .L_eye_pupil, .R_eye_pupil {animation: blink 560ms ease-in-out;}
+			animation: shake 560ms ease-in-out;
+		}
+		@keyframes shake {
+			0%,  100% {transform: rotate(0);}
+			20%, 40% {transform: rotate(80deg);}
+			60%, 80% {transform: rotate(-40deg);}
+		}
+		@keyframes blink {
+			50%, 60% {fill: #030303;}
+		}
+		.align-items-center{
+			display:flex!important;
+			flex-direction:column!important;
+			justify-content:center!important;
+			align-items:center!important;
+			width:100vw!important;
+			height:100vh!important;
+		}
+		.github {
+			color: #181717;
+			fill: #181717;
+		}
+	</style>
+	<body>
+		<div class="align-items-center">
+			<h1 class="github">
+				<svg viewBox="0 0 27 24" width="25px">
+					<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+				</svg>
+				GitHub
+			</h1>
+			
+			<a href="https://github.com/brunolee-GIT">
+				<svg class="avatar-circle" viewBox="-10 0 390 390" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<radialGradient gradientUnits="userSpaceOnUse" cx="133.102" cy="189.617" r="110.444" id="gradient_head" gradientTransform="matrix(-0.938482, 0.767217, -0.671062, -0.820865, 408.829712, 107.502258)">
+							<stop offset="0" style="stop-color: rgb(39, 39, 39);"/>
+							<stop offset="1" style=""/>
+						</radialGradient>
+						<linearGradient gradientUnits="userSpaceOnUse" x1="175.532" y1="188.989" x2="175.532" y2="237.974" id="gradient_L_eye" gradientTransform="matrix(-0.84984, -0.527042, 0.425765, -0.534197, 186.315199, 424.525316)">
+							<stop offset="0" style="stop-color: rgb(255, 255, 255);"/>
+							<stop offset="1" style="stop-color: rgb(141, 141, 141);"/>
+						</linearGradient>
+						<linearGradient gradientUnits="userSpaceOnUse" x1="278.419" y1="175.279" x2="278.419" y2="229.823" id="gradient_R_eye" gradientTransform="matrix(-0.869616, 0.493726, -0.436565, -0.448011, 572.818714, 161.268593)">
+							<stop offset="0" style="stop-color: rgb(255, 255, 255);"/>
+							<stop offset="1" style="stop-color: rgb(141, 141, 141);"/>
+						</linearGradient>
+						<radialGradient gradientUnits="userSpaceOnUse" cx="182.151" cy="210.175" r="8.151" id="gradient_L_eye_pupil" gradientTransform="matrix(1, 0, 0, 1, -41, -4)">
+							<stop offset="0" style="stop-color: rgba(255, 0, 0, 1)"/>
+							<stop offset="1" style="stop-color: rgba(153, 0, 0, 1)"/>
+						</radialGradient>
+						<radialGradient gradientUnits="userSpaceOnUse" cx="270.776" cy="201.744" r="8.227" id="gradient_R_eye_pupil" gradientTransform="matrix(0.132889, -0.861858, 0.841928, 0.129816, 23.938744, 404.92514)">
+							<stop offset="0" style="stop-color: rgba(255, 0, 0, 1)"/>
+							<stop offset="1" style="stop-color: rgba(153, 0, 0, 1)"/>
+						</radialGradient>
+						<radialGradient gradientUnits="userSpaceOnUse" cx="100.243" cy="283.091" r="102.24" id="gradient_torso" gradientTransform="matrix(-0.038419, 0.215785, -0.588426, -0.104766, 372.429525, 270.427344)">
+							<stop offset="0" style=""/>
+							<stop offset="1" style="stop-color: rgb(6, 6, 6);"/>
+						</radialGradient>
+						<radialGradient gradientUnits="userSpaceOnUse" cx="299.163" cy="65.574" r="19.803" id="gradient_R_ear" gradientTransform="matrix(1.064248, 0.63587, -0.710323, 1.188853, -10.501711, -208.728043)">
+							<stop offset="0" style="stop-color: rgba(0, 0, 0, 1)"/>
+							<stop offset="1" style="stop-color: rgb(27, 27, 27);"/>
+						</radialGradient>
+						<radialGradient gradientUnits="userSpaceOnUse" cx="138.638" cy="68.675" r="20.303" id="gradient_L_ear" gradientTransform="matrix(0.965933, -0.631738, 0.792641, 1.211959, -93.284721, 72.283257)">
+							<stop offset="0" style="stop-color: rgb(14, 14, 14);"/>
+							<stop offset="1" style="stop-color: rgb(37, 37, 37);"/>
+						</radialGradient>
+					</defs>
+					<path class="fire" style="stroke: rgb(255, 0, 0); paint-order: fill; fill: rgb(255, 9, 0);"
+						d="M 166 29.4 C 166 29.6 167.9 32.9 170.2 36.6 C 179.4 51.8 184.9 67 185.7 79.2 C 186.2 86.7 186 88.4 184.1 92.4 C 181.3 98.1 176.6 101.2 170.6 101.2 C 160.4 101.2 154 93.1 154 80 C 154 75.5 157.3 67.3 162 60.3 C 168 51.3 154.1 61.3 146.5 71.5 C 140.7 79.2 137.9 86.6 137.3 96.2 C 136.6 106 137.9 112.8 144.1 131.3 C 150.2 149.5 150.8 153.4 148.4 158.5 C 144.6 166.6 134.9 168.5 126.4 162.7 C 120.5 158.8 114.7 151.4 111.8 144 C 110.2 139.8 109.6 136.2 109.6 128.8 C 109.5 123.4 109.2 119 108.9 119 C 107.9 119 104.3 123.4 101.2 128.5 C 95.5 137.9 94.7 143.2 95.3 164 C 95.7 174.2 96.4 189.2 97 197.5 C 99.7 235.6 93 269.8 81.9 275.6 C 75.8 278.7 70.7 274.4 69.4 265 C 67.3 249.4 60.1 230.4 51.6 217.6 C 39.6 199.6 18.9 184.6 14.1 190.4 C 13.1 191.6 13.9 194.9 17.9 206.7 C 26.8 233 31.8 257.4 34.1 285.5 C 35.4 301.7 34.8 330.4 33 342.9 C 30.4 360.4 24.336 375.351 17.543 388.638 C 16.725 390.238 17.597 390 17.597 390 L 380.566 390 L 380.7 370.7 C 379.6 332.3 372.7 303.6 359 279.5 C 354.4 271.5 342.6 256 341.1 256 C 338.3 256 340.023 266.662 344 289.5 C 345.09 295.76 349.552 312.8 343.988 322.79 C 340.139 329.701 329.863 332.598 323.293 329.01 C 316.542 325.324 313.1 318.5 309.8 309.3 C 307.1 301.9 306.3 285.2 308 272.7 C 309.8 259 316.8 232.8 326.4 203.3 C 331.1 188.8 335 176.8 335 176.5 C 335 174.3 326.3 179.8 318.7 186.9 C 312.4 192.8 305.9 201.8 297 217 C 293 223.8 288.6 230.4 287.4 231.7 C 284.5 234.5 279.7 234.7 277.1 232.1 C 272.8 227.8 273.1 219.5 278.2 198.5 C 282.3 181.6 282.7 167.8 279.3 161.3 C 277.1 157.3 267.3 147.8 257.7 140.5 C 252.8 136.8 245.1 132.8 244 133.5 C 243.6 133.7 245.1 137.4 247.2 141.8 C 257.4 162.2 249.7 181 231.2 181 C 220.9 181 212.2 170.8 209.9 155.8 C 208.6 147.7 209.1 139.5 212 113.5 C 214.4 93.1 214.6 75 212.5 66.2 C 209.1 51.8 201.1 41.6 188.6 35.5 C 179.9 31.3 166 27.5 166 29.4 Z"/>
+					<path class="tail" style="fill: rgb(2, 2, 2);"
+						d="M 48 226.6 C 48 226.9 51 232.8 54.6 239.6 C 61.9 253.4 61.4 253.2 67.6 246.1 L 70.146 243.254 L 84.6 249.9 C 109.1 262.7 124.8 274.5 126.6 281.4 C 127.8 286.2 126 289.1 114.9 300.5 C 100.3 315.7 98.7 319.8 103.3 331 C 111.6 351.1 139.7 376.6 162.2 384.6 L 166 385.9 L 166 380.5 C 166 375.5 165.8 375 163.8 375 C 160.1 375 150.1 369.7 141.5 363.3 C 130.8 355.3 114 337.7 110.7 331 C 106 321.7 106.9 319.3 119.2 306 C 127.8 296.7 133 288.5 133 284.3 C 133 274.7 114.9 259.5 86.2 244.9 C 79.5 241.5 73.169 239.093 73.169 238.593 C 73.169 238.093 74.8 235.5 75.7 233.5 C 76.6 231.6 77.1 229.8 76.8 229.5 C 76.5 229.1 70.2 228.2 62.9 227.5 C 47.2 225.8 48 225.8 48 226.6 Z"/>
+					<path class="torso" style="fill: url('#gradient_torso');"
+						d="M 233.6 243.7 C 230.8 244 216.4 247.3 201.6 251.1 L 174.5 258.2 L 167.2 263.7 C 156.7 271.7 152.4 277 143.5 293.1 C 139.1 301 130.3 316.9 123.8 328.4 C 113.9 346 111.8 350.7 110.1 357.9 C 108 367 105.965 385.9 106.231 390 C 115.627 390 138.182 390 150.54 390 C 151.238 390 154.272 358.631 154.3 341.5 C 154.333 320.898 155.2 318.4 161.8 307.1 L 164.5 302.5 L 165.3 308.5 C 166.5 317.1 165.3 344.9 163 362.5 C 161.9 370.7 160.7 380.3 160.3 383.7 L 159.578 390 C 159.578 390 250.726 390.036 250.727 390 C 250.973 390 250.1 385.1 249.3 381 C 247.2 369.8 246.6 343 247.9 320.5 C 249 302 250.6 287.6 251.7 285.7 C 251.9 285.3 253.7 286.9 255.6 289.2 C 265.7 301.2 268.1 315.4 263.9 337.4 C 262 347.2 261.8 350.6 262.3 367 C 262.7 377.2 264.934 390 264.934 390 L 310.132 390.013 L 310.4 376.5 C 310.2 362.4 306.4 335.8 302.8 324 C 300.8 317.4 287 290.7 279.9 279.8 C 277.8 276.4 273.3 268.5 270.1 262.1 C 264 250.2 260.6 245.9 255.7 244.1 C 253 243 244.2 242.9 233.6 243.7 Z"/>
+					<path class="head" style="fill: url('#gradient_head');"
+						d="M 139.643 20.451 C 122.299 28.578 102.9 38.4 85.7 71.7 C 76 90.5 71 110.8 71 131.5 C 71 151.7 74.5 166.1 84 185.6 C 100.2 218.8 132.2 247.8 165 259.2 C 173.4 262 175.7 262.4 185 262.4 C 193 262.4 197.2 261.9 202.5 260.2 C 231.1 251.3 260.2 224.5 276.5 192 C 293.4 158.3 296.4 124.2 285.4 91.1 C 272.2 51.4 243.473 24.957 206.087 15.491 C 183.123 9.676 155.166 13.177 139.643 20.451 Z"/>
+					<path class="L_ear" style="filter: none; fill: url('#gradient_L_ear');"
+						d="M 71 40.822 C 71 44.522 85.407 84.99 86.107 85.69 C 88.807 88.39 98.707 83.002 106.207 74.802 C 110.807 69.802 117.09 58.495 115.79 57.195 C 114.69 56.195 71 40.322 71 40.822 Z"/>
+					<path class="R_ear" style="filter: none; fill: url('#gradient_R_ear');"
+						d="M 254 44.7 C 242.7 50.5 235.865 55.944 235.465 56.344 C 233.165 58.444 242.681 70.459 250.091 75.447 C 257.151 80.199 268.112 80.123 268.112 78.923 C 268.112 78.823 270.3 70.1 272 57.5 C 273.6 45 274.9 34.5 274.7 34.4 C 274.6 34.2 265.2 38.9 254 44.7 Z"/>
+					<path class="L_eye" style="fill: url('#gradient_L_eye');"
+						d="M 96.3 186.1 C 90.11 193.275 108.3 218.5 126 227.2 C 139.3 233.8 153.3 235.6 165.5 232.5 C 171 231.1 174 229 174 226.7 C 174 224.6 166.8 219.2 156.9 213.8 C 151.2 210.7 141.6 204.9 135.5 201 C 119.8 190.9 106.672 186.241 103.599 185.407 C 100.506 184.568 97.169 185.093 96.3 186.1 Z"/>
+					<path class="R_eye" style="fill: url('#gradient_R_eye');"
+						d="M 259.5 173.5 C 256.8 174.8 250 179.4 244.5 183.6 C 239 187.8 228.4 195.8 220.9 201.5 C 205.2 213.4 202 216.8 202 221.5 C 202 224.6 204.551 224.869 206.5 225.4 C 211.481 226.756 225.1 224.6 231.1 222.5 C 238.6 219.8 248.7 213.9 254.3 208.9 C 264.9 199.5 273.474 183.802 272.8 175.3 C 272.638 173.259 271.778 171.5 268.5 171.3 C 265.897 171.141 262.8 171.9 259.5 173.5 Z"/>
+					<path class="L_eye_pupil" style="fill: url('#gradient_L_eye_pupil');"
+						d="M 133 203.6 C 133 210.8 140.732 214.631 146.9 211.4 C 148.616 210.501 149.528 209.793 149.254 209.48 C 148.876 209.051 144.843 206.777 141.915 204.969 C 137.666 202.346 133.769 199.793 133.469 199.793 C 133.269 199.793 133 201.6 133 203.6 Z"/>
+					<path class="R_eye_pupil" style="fill: url('#gradient_R_eye_pupil'); paint-order: fill; filter: none;"
+						d="M 230.738 194.031 C 227.974 196.149 227.773 196.211 224.845 198.494 L 221.549 200.957 C 222.443 203.084 224.143 204.201 226.308 204.708 C 227.39 204.962 231.667 205.435 235.1 202.1 C 238.2 198.9 238.9 194.6 236.8 191.8 C 236.297 191.213 235.554 190.362 235.144 190.662 C 234.677 191.005 231.495 193.45 230.738 194.031 Z"/>
+				</svg>
+			</a>
+			<h1>brunolee</h1>
+			&#171; I love batch scripts &#187;
+		</div>
+	</body>
+</html>
