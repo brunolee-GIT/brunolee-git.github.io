@@ -67,9 +67,42 @@
 			0%, 100% {visibility: visible;}
 			48%, 52% {visibility: hidden;}
 		}
+		table {
+			background-color: rgba(0, 0, 0, 0.2);
+			position: absolute;
+			bottom: 5px;
+			width: 100%;
+			line-height: 12px;
+			text-align: center; 
+			vertical-align: middle;
+		}
+		th, td {
+			border: 1px solid rgba(255, 255, 255, 0.1);
+		}
 	</style>
 
-	<body>
+	<script>
+		function startTime() {
+			const today = new Date()
+			var locale = Intl.NumberFormat().resolvedOptions().locale;
+			var localetimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+			var Mytimezonedate = today.toLocaleTimeString(locale, {weekday:'long', month:'long', day:'2-digit', year:'numeric'});
+			var MytimeZonevalue = today.toString().match(/([-\+][0-9][0-9])/)[1]
+			//if (MytimeZonevalue == +00) {MytimeZonevalue = ""};
+			var MytimeZoneName = today.toString(locale, {timeZoneName:'long'}).split(/[()]/)[1];
+			var UTCdate = today.toLocaleTimeString(locale, {timeZone:'UTC', day:'2-digit', month:'2-digit', year:'numeric'});
+			var UTCName = today.toLocaleTimeString(locale, {timeZone:'UTC', hourCycle:'h24', hour:'2-digit', timeZoneName:'long'}).split(/[00-99]/)[2].slice(1, 99);
+			var timestamp = Math.floor(Date.now()/1e3);
+
+			document.getElementById('MytimeZoneName').innerHTML = MytimeZoneName+ " [" +localetimeZone+ "]";
+			document.getElementById('Mytimezonedate').innerHTML = Mytimezonedate+ " [GMT" +MytimeZonevalue+ "]";
+			document.getElementById('UTCName').innerHTML = UTCName;
+			document.getElementById('UTCdate').innerHTML = UTCdate+ "  |  Unix TimeStamp: " +timestamp;
+			setTimeout(startTime, 1000);
+		}
+	</script>
+
+	<body onload="startTime()">
 		<div class="align-items-center">
 			<p>
 				<svg height="40px" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
@@ -158,6 +191,17 @@
 			</a>
 			<h1>brunolee</h1>
 			&#171; I love batch scripts &#187;
+
+			<table>
+				<tr style="font-family: Arial; font-size: 13px; color: white;">
+					<th id="MytimeZoneName"></th>
+					<th id="UTCName"></th>
+				</tr>
+				<tr style="font-family: Arial; font-size: 12px; color: gray;">
+					<td id="Mytimezonedate"></td>
+					<td id="UTCdate" ></td>
+				</tr>	
+			</table>
 		</div>
 	</body>
 </html>
